@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Cor de fundo suave */
+    color: #333;
+}
+
+header {
+    background: #00796b; /* Verde escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; /* Ajuste o tamanho da logo */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff; /* Fundo branco para as seções */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-container {
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+    margin-top: 20px; /* Adiciona um espaço acima da imagem */
+}
+
+.imagem-lixos {
+    max-width: 80%; /* Limita a largura máxima da imagem a 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #00796b; /* Borda verde escura */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: #00796b; /* Verde escuro */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .logo {
+    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+footer p {
+    margin-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #00796b; /* Botão verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #004d40; /* Efeito hover para o botão */
+}
+
+form textarea{
+    resize: none; 
