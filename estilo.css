@@ -60,24 +60,73 @@ section {
     border-radius: 5px; /* Borda arredondada */
 }
 
+#criadores {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+#criadores h2 {
+    color: #33691e;
+    margin-bottom: 20px;
+}
+
+.criadores-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.criador {
+    width: 200px;
+    text-align: center;
+}
+
+.criador img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.criador h3 {
+    margin-top: 10px;
+    color: #2e7d32;
+}
+
+.criador p {
+    font-size: 14px;
+    color: #555;
+}
+
+
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    background: #00796b; /* Verde escuro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    padding: 20px;
+    background: #00796b;
     color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-footer .logo {
-    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+footer .footer-content {
+    text-align: center; /* Centraliza o texto dentro da div */
 }
 
-footer p {
-    margin-left: 10px;
+footer .footer-content p {
+    margin: 8px 0; /* Ajusta o espaçamento entre as linhas */
+}
+
+footer .ancora {
+    position: absolute;
+    right: 20px; /* Posiciona a âncora bem na direita */
 }
 
 form {
@@ -111,3 +160,47 @@ form button:hover {
 
 form textarea{
     resize: none; 
+	
+}
+/* Seção de Avaliação */
+#avaliacao {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 500px;
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Caixa das Estrelas */
+.caixa-estrelas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    direction: rtl; /* Inverte a ordem das estrelas */
+}
+
+/* Ocultar inputs */
+.caixa-estrelas input {
+    display: none;
+}
+
+/* Estilo das Estrelas */
+.caixa-estrelas label {
+    font-size: 70px; /* Aumentando o tamanho das estrelas */
+    color: #ccc; /* Cor inicial das estrelas apagadas */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Estrelas Acendidas */
+.caixa-estrelas input:checked ~ label {
+    color: #f39c12; /* Cor das estrelas quando selecionadas */
+}
+
+/* Efeito ao passar o mouse */
+.caixa-estrelas label:hover,
+.caixa-estrelas label:hover ~ label {
+    color: #f39c12; /* Cor das estrelas ao passar o mouse */
+}
