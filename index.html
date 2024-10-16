@@ -9,12 +9,12 @@
 	</head>
 	<body>
 		<header>
-			<h1>Lixo Plástico e seus Impactos</h1>
 			<nav>
 				<ul>
 					<li><a href="#natureza">Home</a></li>
 					<li><a href="#projetos">Sobre</a></li>
 					<li><a href="#dicas">Impactos</a></li>
+					<li><a href="#criadores">Criadores</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
@@ -72,11 +72,17 @@
 
 			<section id="dicas">
 				<h2>Impactos</h2>
-				<p>Os impactos que iremos discutir agora são resultantes do descarte inadequado do lixo plástico.
-				No entanto, esse não é o problema central; a principal causa é o elevado consumo de plástico.
-				Quando consumimos mais, também descartamos mais, e, consequentemente, o descarte se torna inadequado.</p>
+				<p>Os impactos que iremos discutir agora são resultantes do descarte inadequado do lixo plástico.</p>
 				<div class="imagem-container">
-					<img src="img/liixos.jpg" alt="Lixo Plástico" class="imagem-lixos">	
+					<img src="img/lixo2.jpg" alt="Lixo Plástico" class="imagem-lixos">	
+				</div>
+				<br><br>
+				<p>No entanto, esse não é o problema central; a principal causa é o elevado consumo de plástico.
+				O "consumo de plástico" consiste na compra ou utilização de utensílios, objetos ou qualquer coisa 
+				que contenha plástico em sua composição. Dito isso, quando consumimos mais, também descartamos mais e, 
+				consequentemente, o descarte torna-se inadequado.</p>
+				<div class="imagem-container">
+					<img src="img/tarta.jpg" alt="Lixo Plástico" class="imagem-lixos">	
 				</div>
 				<br><br>
 				<h2>Ilhas de Plástico</h2>
@@ -85,7 +91,7 @@
 				marinho, resultando na morte de espécies. Além disso, contribuem para o aquecimento global, pois, ao se 
 				decompor sob o Sol, liberam gases de efeito estufa, como etileno e metano.</p>
 				<div class="imagem-container">
-					<img src="img/rio4.jpeg" alt="Lixo Plástico" class="imagem-lixos">	
+					<img src="img/rio4.jpeg" alt="Lixo Plástico" class="imagem-lixos">
 				</div>
 				<br><br>
 				<h2>Alagamentos urbanos</h2>
@@ -105,10 +111,32 @@
 				<div class="imagem-container">
 					<img src="img/micro.jpg" alt="Lixo Plástico" class="imagem-lixos">	
 				</div>
-				<br><br>
-				
 			</section>
-
+			 <section id="criadores">
+				<h2>Conheça os Criadores do Site</h2>
+				<div class="criadores-container">
+					<div class="criador">
+						<img src="img/criador1.jpeg" alt="Foto do Criador 1">
+						<h3>Pedro</h3>
+						<p>Responsável pela criação visual do site.</p>
+					</div>
+					<div class="criador">
+						<img src="img/criador2.jpeg" alt="Foto do Criador 2">
+						<h3>Pablo</h3>
+						<p>Responsável pela revisão do projeto, html, css e pesquisa.</p>
+					</div>
+					<div class="criador">
+						<img src="img/criador3.jpeg" alt="Foto do Criador 3">
+						<h3>Nicolas</h3>
+						<p>Responsável pela pesquisa.</p>
+					</div>
+					<div class="criador">
+						<img src="img/criador4.jpeg" alt="Foto do Criador 4">
+						<h3>Rafael</h3>
+						<p>Responsável pela prototipagem de projeto e elementos visuais e pesquisas.</p>
+					</div>
+				</div>
+			</section>
 			<section id="contato">
 				<h2>Contato</h2>
 				<form id="contact-form">
@@ -118,6 +146,25 @@
 					<label for="email">Email:</label>
 					<input type="email" id="email" name="email" required>
 					
+				<section id="avaliacao">
+					<h2>Avalie-nos</h2>
+					<div class="caixa-estrelas">
+						<input type="radio" id="estrela5" name="avaliacao" value="5">
+						<label for="estrela5" title="5 estrelas">&#9733;</label>
+
+						<input type="radio" id="estrela4" name="avaliacao" value="4">
+						<label for="estrela4" title="4 estrelas">&#9733;</label>
+
+						<input type="radio" id="estrela3" name="avaliacao" value="3">
+						<label for="estrela3" title="3 estrelas">&#9733;</label>
+
+						<input type="radio" id="estrela2" name="avaliacao" value="2">
+						<label for="estrela2" title="2 estrelas">&#9733;</label>
+
+						<input type="radio" id="estrela1" name="avaliacao" value="1">
+						<label for="estrela1" title="1 estrela">&#9733;</label>
+					</div>
+				</section>
 					<label for="mensagem">Mensagem:</label>
 					<textarea id="mensagem" name="mensagem" ></textarea>
 					
@@ -140,10 +187,16 @@
 					document.getElementById('contact-form').reset();
 				});
 			</script>        
-
 		<footer>
-			<img src="img/logo.png" alt="Logotipo" class="logo">
-			<p>&copy; 2024 SSPR. Todos os direitos reservados.</p>
+			<div class="footer-content">
+				<p>&copy; 2024 SSPR. Todos os direitos reservados.</p>
+				<p>Trabalho acadêmico sem fins lucrativos</p>
+			</div>
+			<div class="ancora">
+				<a href="#natureza">
+					<img src="img/sobe9.png" width="20%" alt="Voltar ao topo">
+				</a>
+			</div>
 		</footer>
 	</body>
 </html>
