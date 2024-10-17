@@ -87,8 +87,8 @@ section {
 }
 
 .criador img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -162,45 +162,5 @@ form textarea{
     resize: none; 
 	
 }
-/* Seção de Avaliação */
-#avaliacao {
-    text-align: center;
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 500px;
-    background: linear-gradient(135deg, #ffffff, #f7f7f7);
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 
-/* Caixa das Estrelas */
-.caixa-estrelas {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    direction: rtl; /* Inverte a ordem das estrelas */
-}
 
-/* Ocultar inputs */
-.caixa-estrelas input {
-    display: none;
-}
-
-/* Estilo das Estrelas */
-.caixa-estrelas label {
-    font-size: 70px; /* Aumentando o tamanho das estrelas */
-    color: #ccc; /* Cor inicial das estrelas apagadas */
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-/* Estrelas Acendidas */
-.caixa-estrelas input:checked ~ label {
-    color: #f39c12; /* Cor das estrelas quando selecionadas */
-}
-
-/* Efeito ao passar o mouse */
-.caixa-estrelas label:hover,
-.caixa-estrelas label:hover ~ label {
-    color: #f39c12; /* Cor das estrelas ao passar o mouse */
-}
