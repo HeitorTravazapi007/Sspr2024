@@ -199,7 +199,7 @@ section {
 .rating-container {
     display: inline-block;
     position: relative;
-    width: 120px; /* Ajuste o tamanho conforme necessário */
+    width: 160px; 
   }
   
   .form-select {
