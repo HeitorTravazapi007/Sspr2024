@@ -23,7 +23,7 @@
 					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
-		</header><br><br>
+		</header>
 		<main>
             <section id="natureza">
                 <h2>Lixo Plástico: Pequenos Resíduos, Grandes Problemas</h2>
@@ -63,7 +63,7 @@
 				garrafas, embalagens e utensílios descartáveis. Esses materiais, quando não descartados corretamente, podem causar poluição ambiental,
 				uma vez que demoram muito para se decompor e podem prejudicar a natureza e os ecossistemas.Sendo classificados pelo:<br>
 				Tipo de material, Uso, Reciclabilidade e Destino.</p>
-				<br>
+				<br>        
 					<h3>Tipo de material:</h3>
 						<p>PET: Garrafas de água e refrigerante.</p>					
 						<p>PEAD: Sacos plásticos e recipientes de alimentos.</p>				
@@ -76,7 +76,7 @@
 					<h3>Reciclabilidade:</h3>
 						<p>Recicláveis: Plásticos que podem ser reciclados, como PET e PEAD.</p>
 						<p>Não Recicláveis: Plásticos que não são facilmente recicláveis, como poliestireno.</p>
-						<br><br>
+						<br><br>      
 					<h3>Economia circular de plásticos:</h3>
 						<p>A Economia Circular é um modelo econômico que busca redefinir a forma como os recursos são produzidos, consumidos e descartados. 
 						Diferente do tradicional, que segue o sentido “extrair, produzir, usar e descartar”, a economia circular propõe um ciclo fechado, onde os produtos, materiais e recursos são mantidos em uso pelo maior tempo possível, com a minimização da geração de resíduos. Este conceito fundamenta-se em três princípios: reduzir, reutilizar e reciclar.</p>
@@ -134,6 +134,12 @@
 								</div>
 							</div>
 						</section>
+                        <div class="ancora-fixa">
+                                <a href="#natureza">
+                                    <img src="img/pacima.png" width="20" height="20" alt="Voltar ao topo">
+                                </a>
+                            </div>
+                            
 			</section>
 			<section id="dicas">
 				<h2>Soluções</h2>
@@ -250,14 +256,22 @@
 			
 					document.getElementById('contact-form').reset();
 				});
-			</script>      
+			</script>     
+            <script>
+                window.onscroll = function() {
+                    const anchor = document.querySelector('.ancora-fixa');
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        anchor.classList.add('show');
+                    } else {
+                        anchor.classList.remove('show');
+                    }
+                };
+            </script>
+             
 		<footer>
 			<div class="footer-content">
 				<p>SSPR 2024 &copyTodos os direitos reservados.<br>
 				Trabalho acadêmico sem fins lucrativos</p>
-			</div>
-			<div class="ancora">
-				<div align="right"><a href="#"><img src="img/pacima.png" width="20" height="20"></a></div><!--mover footer pra cá-->
 			</div>
 		</footer>
 	</body>
